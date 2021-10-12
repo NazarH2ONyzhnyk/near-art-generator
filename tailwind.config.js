@@ -14,6 +14,15 @@ module.exports = {
         },
         red: {
           400: '#F94119',
+        },
+        green: {
+          400: '#ADDB67'
+        },
+        blue: {
+          200: '#80CAC3'
+        },
+        purple: {
+          200: '#C591E8'
         }
       }
     },
