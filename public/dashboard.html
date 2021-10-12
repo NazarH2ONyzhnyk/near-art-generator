@@ -15,13 +15,17 @@
         }
     </style>
     <div class="bg-gray-300">
-        <div class="container mx-auto px-6 pt-20">
+        <div class="container mx-auto px-6 pt-12 lg:pt-20">
             
             <!-- Content -->
             <div class="flex">
 
                 <!-- Left side dashboard -->
-                <div class="hidden lg:block dashboard-profile h-auto">
+                <div class="relative hidden lg:block dashboard-profile h-auto">
+
+                    <img src="./img/romb.png" alt="" class="absolute w-20 left-0 -top-6 ">
+                    <img src="./img/square.png" alt="" class="absolute w-24 -left-6 top-72">
+
                     <div class="flex flex-col items-center">
                         <a href="#" class="flex items-center text-4xl font-bold mt-12">
                             <img src="./img/near_logo_stack 1.png" alt="" class="">
@@ -45,7 +49,39 @@
                 <!-- Right side dashboard -->
                 <div class="lg:ml-10 w-full">
                     <nav>
-                        <form action="" class="flex flex-col md:flex-row items-center justify-between w-full">
+                        <!-- Mobile navigation -->
+                        <div class="lg:hidden">
+                            <div class="flex flex-col md:flex-row items-center md:justify-between">
+                                <!-- Logo -->
+                                <a href="#" class="flex items-center text-4xl font-bold ">
+                                    <img src="./img/near_logo_stack 1.png" alt="" class="">
+                                    <span class="w-0.5 h-11 bg-black ml-1 mr-2"></span>
+                                    Arts
+                                    <span class="w-2 h-2 rounded-full bg-black ml-1 -mt-5"></span>
+                                </a>
+
+                                <div class="mt-4 flex justify-between items-center w-full md:w-auto">
+                                    <!-- Account name -->
+                                    <div class="flex items-center md:mr-5">
+                                        <div class="w-10 h-10 md:w-16 md:h-16 p-2 rounded-full dashboard-profile-img flex justify-center items-center">
+                                            <img src="./img/near_logo_stack 2.png" alt="" class="">
+                                        </div>
+                                        <a href="#" class="ml-4 md:text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-blue-400">oliinykk.testnet</a>
+                                    </div>
+                                    <!-- Logout btn -->
+                                    <a href="#" class="flex items-center font-bold text-sm hover:text-gray-500">
+                                        <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 21H10C8.89543 21 8 20.1046 8 19V15H10V19H19V5H10V9H8V5C8 3.89543 8.89543 3 10 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21ZM12 16V13H3V11H12V8L17 12L12 16Z" fill="black"/>
+                                        </svg>
+                                        Logout
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <form action="" class="mt-7 lg:mt-0 flex flex-col md:flex-row items-center justify-between w-full">
                             
                             <!-- Search -->
                             <div class="w-full flex items-center">
@@ -65,12 +101,20 @@
                         </form>
                     </nav>
 
-                    <div class="flex flex-col md:flex-row items-start md:items-end mt-9">
+                    <div class="relative flex flex-col md:flex-row items-start md:items-end mt-9">
+
+                        <img src="./img/romb.png" alt="" class="hidden md:block lg:hidden absolute w-16 top-0 right-24">
+                        <img src="./img/black.png" alt="" class="hidden md:block absolute w-16 lg:w-24 -top-4 right-0">
+
                         <h1 class=" font-bold text-3xl 2xl:text-4xl md:pl-10">My art in own</h1>
                         <p class="float-left text-gray-500 mt-3 md:mt-0 md:ml-6 font-bold text-lg 2xl:text-2xl">here is your art</p>
                     </div>
 
-                    <div class="mt-8 ownart-bg h-auto px-5 md:px-20 lg:px-16 xl:px-8 2xl:px-10 pt-9 pb-12">
+                    <!-- Own art section -->
+                    <div class="relative mt-8 ownart-bg h-auto px-5 md:px-20 lg:px-16 xl:px-8 2xl:px-10 pt-9 pb-12">
+
+                        <img src="./img/square.png" alt="" class="hidden md:block lg:hidden w-24 absolute top-6 -left-12">
+                        <img src="./img/vector.png" alt="" class="hidden md:block absolute w-24 -bottom-12 right-0">
 
                         <div class="flex items-center justify-center xl:justify-start">
                             <div class="flex ">
@@ -136,7 +180,57 @@
                             <div class="bg-gray-800 editor rounded-xl w-full">
                                 <div class="w-full h-8 bg-gray-900 rounded-t-xl">
                                     <p class="inline-block ml-12 align-middle pt-2 h-full px-4 bg-gray-700 text-gray-400 text-sm">about.artcode</p>
-                                    <div class="">
+                                    <div class="flex">
+                                        <div class="grid grid-flow-row text-gray-500 text-sm m-3 md:m-4 gap-y-2">
+                                            <div class="">
+                                                <p>1</p>
+                                            </div>
+                                            <div class="">
+                                                <p>2</p>
+                                            </div>
+                                            <div class="">
+                                                <p>3</p>
+                                            </div>
+                                            <div class="">
+                                                <p>4</p>
+                                            </div>
+                                            <div class="">
+                                                <p>5</p>
+                                            </div>
+                                            <div class="">
+                                                <p>6</p>
+                                            </div>
+                                            <div class="">
+                                                <p>7</p>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-flow-row text-gray-500 text-sm m-3 md:m-4">
+                                            <div class="pb-1 ">
+                                                <p class="text-green-400">.about <span class="text-gray-500">{</span></p>
+                                            </div>
+                                            <div class="py-1 border-l border-gray-600 pl-4 md:pl-8">
+                                                <p class="text-gray-600">/* basic info */</p>
+                                            </div>
+                                            <div class="flex py-1 border-l border-gray-600 pl-4 md:pl-8">
+                                                <p class="text-blue-200">seed<span class="text-gray-600">:</span></p>
+                                                <p class="ml-4 text-purple-200">15684165<span class="text-gray-600">;</span></p>
+                                            </div>
+                                            <div class="flex py-1 border-l border-gray-600 pl-4 md:pl-8">
+                                                <p class="text-blue-200">Owner<span class="text-gray-600">:</span></p>
+                                                <p class="ml-4 text-purple-200">olinykkk.testnet <span class="text-gray-600 -ml-2">;</span></p>
+                                            </div>
+                                            <div class="flex py-1 border-l border-gray-600 pl-4 md:pl-8">
+                                                <p class="text-blue-200">Option<span class="text-gray-600">:</span></p>
+                                                <p class="ml-4 text-purple-200">Value<span class="text-gray-600">;</span></p>
+                                            </div>
+                                            <div class="flex py-1 border-l border-gray-600 pl-4 md:pl-8">
+                                                <p class="text-blue-200">Option #2<span class="text-gray-600">:</span></p>
+                                                <p class="ml-4 text-purple-200">Value #2<span class="text-gray-600">;</span></p>
+                                            </div>
+                                            <div class="pt-1 ">
+                                                <p class="text-gray-500">}</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
