@@ -636,7 +636,6 @@ body {
 
 .art-bg {
   background: url('../img/art-bg.png') no-repeat;
-  /* background-position: 50% 50%; */
   background-size: 100%;
 }
 
@@ -706,7 +705,17 @@ body {
   width: 313px;
 }
 
+.alert {
+  width: 312px;
+  box-shadow: -26.9381px -26.9381px 53.8762px #FAFBFF, 26.9381px 26.9381px 53.8762px #A6ABBD;
+  border-radius: 25.2545px;
+}
+
 @media (min-width: 768px) {
+  .alert {
+    width: 498px;
+  }
+
   .offer-text {
     width: 454px;
   }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+</head>
+<body>
+    <div class="absolute flex w-full h-screen items-center justify-center">
+        <div class="flex flex-col items-center alert bg-gray-400 py-8 px-10">
+            <img src="./img/successful.png" alt="">
+            <p class="mt-2 text-4xl font-bold text-center">Transaction <br> Successful</p>
+
+            <a href="#" class="block mt-3 md:mt-5 text-sm md:text-base w-full md:w-2/3 bg-gradient-to-r from-purple-700 to-blue-400 rounded-full p-0.5 transform active:scale-95 duration-75">
+                <div class="bg-transparent hover:bg-gray-300 rounded-full duration-300">
+                    <div class="w-full h-full font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white to-white hover:from-purple-700 hover:to-blue-400 py-4 duration-500">
+                        View on explorer
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="mt-3 font-bold text-gray-600 transform active:scale-95 duration-100">Close</a>
+        </div>
+    </div>
+</body>
+</html>
