@@ -59,7 +59,7 @@
     }
     .art-bg {
         background: url('../img/art-bg.png') no-repeat;
-        background-size: 100%;
+        background-size: contain;
     }
     .w-art {
         width: 150px;
